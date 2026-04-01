@@ -1,0 +1,52 @@
+/* ── Reset & base ──────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --font-sans: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+
+  /* palette */
+  --bg:        #0d0f14;
+  --surface:   #13161e;
+  --surface2:  #1a1e29;
+  --border:    #252a38;
+  --border2:   #2e3447;
+
+  --text:      #e8eaf0;
+  --text-2:    #8892aa;
+  --text-3:    #4d5670;
+
+  --accent:    #4f8ef7;
+  --accent-dim:#2a4a8a;
+
+  /* node type colors */
+  --c-customer:  #3b82f6;
+  --c-salesorder:#22c55e;
+  --c-product:   #f97316;
+  --c-plant:     #a16207;
+  --c-delivery:  #a855f7;
+  --c-billing:   #ef4444;
+  --c-payment:   #14b8a6;
+
+  --radius:   8px;
+  --radius-lg:12px;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* scrollbar */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+
+/* utility */
+.mono { font-family: var(--font-mono); }
