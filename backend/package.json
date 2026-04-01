@@ -1,11 +1,12 @@
 {
   "name": "sap-o2c-graph-backend",
   "version": "1.0.0",
-  "description": "SAP Order-to-Cash Graph API — Express + SQLite + Gemini",
+  "description": "SAP Order-to-Cash Graph API — Express + SQLite + Groq",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node --watch server.js"
+    "dev": "node --watch server.js",
+    "build": "npm rebuild better-sqlite3"
   },
   "dependencies": {
     "better-sqlite3": "^9.4.3",
@@ -15,6 +16,8 @@
     "groq-sdk": "^0.9.1"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": "20.x"
   }
 }
+
+
